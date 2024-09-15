@@ -1,0 +1,107 @@
+/* Flex Box in CSS. */
+/* Properties of flexbox in CSS. */
+
+
+
+#container{
+    height: 300px;
+    width: 80%;
+
+    background-color: white;
+
+    margin: 10px auto;
+    border: 2px solid black;
+
+    display: flex;                          /* By display type flex we ensure that the elements inside this container div do not go outside the container's(parent element) space. */
+                                            /* Direction of allignment is row wise by default. */
+
+
+
+
+/*  flex-direction: column;                 /* Direction of allignment is now set to column wise. */
+                                            /* main axis is top to bottom. */
+
+    /* following can also be set as the direction :- */
+    flex-direction: row;                        /*  main axis is left to right. */
+/*  flex-direction: row-reverse;                /*  main axis is right to left. */
+/*  flex-direction: column-reverse;             /*  main axis is bottom to top. */
+    
+
+
+
+    justify-content: flex-start;                /* justify property tells how the browser distributes space between and around content items along the main axis. */
+                                                /* flex-start justifies the elements from the start of the main axis. */
+    /* Following can also be used :- */
+ /* justify-content: flex-end;                /* flex-end justifies the elements from the end of the main axis. */
+ /* justify-content: center;                  /* center justifies the elements from the center of the main axis. */
+
+ /* justify-content: space-between;             /* space-between justifies the elements such that the extra space along the main axis goes in between the elements. */
+ /* justify-content: space-around;              /* space-around justifies the elements such that the extra space along the main axis goes around the elements. */
+ /* justify-content: space-evenly;              /* space-evenly justifies the elements such that the extra space along the main axis goes around the elements evenly. */
+
+    
+
+
+ /* flex-wrap: nowrap;                /* Sets whether flex items are forced onto one line or can wrap onto multiple lines. */
+                                      /* By default flex-wrap is nowrap. i.e. by nowrap, wrap is not applied to the elements. */
+
+    /* Following can also be used :- */
+    flex-wrap: wrap;                    /* By wrap, the element's length along the main axis is not ignored and if the element overflows, it is moved/wraped to other line. */
+ /* flex-wrap: wrap-reverse;            /* Reverses the direction of wrap along the cross axis. */
+    
+
+
+
+    align-items: flex-start;                /* align property distributes items along the cross axis. */
+                                            /* flex-start justifies the elements from the start of the cross axis. */
+ /* Following can also be used :- */
+ /*  align-items: flex-end;                /* flex-end justifies the elements from the end of the cross axis. */
+ /*  align-items: center;                  /* center justifies the elements from the center of the cross axis. */
+ /*  align-items: baseline;                 /* baseline justifies the elements such that the texts in each element comes to a same baseline. i.e. if we have the elements of different size, then the elements are arranged in such a way that their text comes to the same base line. */
+ /*  align-items: stretch;                   /* justifies the elements such that the extra space along the cross axis goes around the elements evenly  */
+
+
+
+
+    align-content: flex-start;                /* align-content property tells how the browser distributes space between and around content items along the cross axis. */
+                                                /* flex-start justifies the elements from the start of the cross axis. */
+    /* Following can also be used :- */
+ /* align-content: flex-end;                /* flex-end justifies the elements from the end of the cross axis. */
+ /* align-content: center;                  /* center justifies the elements from the center of the cross axis. */
+
+ /* align-content: space-between;             /* space-between justifies the elements such that the extra space along the cross axis goes in between the elements. */
+ /* align-content: space-around;              /* space-around justifies the elements such that the extra space along the cross axis goes around the elements. */
+ /* align-content: space-evenly;              /* space-evenly justifies the elements such that the extra space along the cross axis goes around the elements evenly. */
+
+
+}     
+
+
+#green{
+    align-self: center;                 /* Works same as align-item, but used to align an individual item. It has higher priority than align-item property. */
+                                        /* comment out line 49 to see the effect. */
+    /* Following can also be used :- */
+ /*   align-self: flex-end;                /* flex-end justifies the elements from the end of the cross axis. */
+ /*   align-self: flex-start;                  /* flex-start justifies the elements from the start of the cross axis. */
+ /*   align-self: baseline;                 /* baseline justifies the elements such that the texts in each element comes to a same baseline. i.e. if we have the elements of different size, then the elements are arranged in such a way that their text comes to the same base line. */
+
+
+    order: 3;                   /* Flex items are sorted on the basis of order given to them. i.e higher the order, later it is placed in the container. */
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#container div{
+    height: 50px;                    /*These height and width are ignored(if overflowing) if their parent element have display type 'flex'.*/
+    width: 300px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+

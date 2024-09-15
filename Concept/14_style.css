@@ -1,0 +1,78 @@
+/* Grid in CSS. */
+
+
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(98, 246, 246);
+    margin: auto;
+
+    display: grid;              /* Grid display is used when the items are required to be displayed in 2d(tabular) form. */
+
+   
+ /* grid-template-columns: 200px 200px 200px;              /* This sets the width of each column tracks. */
+ /* grid-template-columns: auto auto auto;              /* auto divides the width of each tracks equally into no. of auto parts. */
+    grid-template-columns: repeat(3,1fr);              /* Repeat is used to divide all available space. */    /* first argument is the no. of tracks and the second argument 1fr means 1 fraction of 100% space available.  */
+ /* grid-template-columns: 1fr 1fr 1fr;               /* Same thing as previous line. Alternate use of repeat(). */
+
+    grid-template-rows: repeat(3,1fr);              /* This sets the height of each row tracks. */
+
+ /*   grid-auto-rows: 2fr;                         /* Sets the non set height of rows to 2fr. */
+ /*   grid-auto-columns: 2fr;                      /* Sets the non set width of columns to 2fr. */
+ 
+ /*   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));      /* sets the column width of minimum 100px and maximum 1fr. */
+                                                                        /* 'auto-fit' is the adequate no. of colums according to the screen size. i.e it make the grid responsive. */
+                                                                        /* similar can be done with rows too. */
+                                                                        /* comment line 12 and 13 to see the responsive effect. */
+
+    /* Inspect the page to see the grid lines. */       /* Items are automatically arranged in individual grid cells. */
+
+
+    /* row-gap: 10px;
+    column-gap: 10px; */
+    grid-gap: 10px 10px;            /* same above thing done in one line. */    /* syntax -> grid-gap: row-gap column-gap; */
+}
+
+
+
+.item{
+ /* width: 100px;
+ /* height: 50px;                           /* If the dimentions of the item is not specified then the items take up a full cell space automatically. */
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+
+#one{
+ /* grid-column-start: 1;
+ /* grid-column-end: 3;                     /* Here, 1 and 3 are the column line no. of the grid. */
+ /* grid-column: 1/3;                       /* same above thing done in one line. */
+    grid-column: 1/span 2;                  /* same above thing done in one line. */    /* 'span 2' tells the number of cells required after the start line. */
+
+
+ /* grid-row-start: 1;
+ /* grid-row-end: 3;                     /* Here, 1 and 3 are the row line no. of the grid. */
+ /* grid-row: 1/3;                       /* same above thing done in one line. */
+    grid-row: 1/span 2;                  /* same above thing done in one line. */    /* 'span 2' tells the number of cells required after the start line. */
+    
+}
+
+
+
+
+
+
+
+
+
+

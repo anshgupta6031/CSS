@@ -1,0 +1,72 @@
+/* Grid properties in CSS. */
+
+
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+.container{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(98, 246, 246);
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    grid-gap: 10px;
+
+ /* justify-items: start;               /* Justifies the element from start (horizontally). */
+ /* justify-items: end;               /* Justifies the element from end (horizontally). */
+    justify-items: center;               /* Justifies the element at center (horizontally). */
+/* Justify property alligns the items horizontally. */
+
+
+ /* align-items: start;               /* Justifies the element from start (vertically). */
+ /* align-items: end;               /* Justifies the element from end (vertically). */
+    align-items: center;               /* Justifies the element at center (vertically). */
+/* align property alligns the items vertically. */
+
+
+/* justify-content and align-content properties are also available in grid layout....... */
+/* place-content is a shorthand for align-content and justify-content........ */
+/* place-items is a shorthand for align-items and justify-items........ */
+}
+
+
+
+.item{
+    width: 100px;
+    height: 50px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    text-align: center;
+
+}
+
+
+
+#one{
+ /* justify-self: end;              /* justify-self is used for individual elements. */
+ /* align-self: end;                /* align-self is used for individual elements. */
+
+    place-self: end;            /* same above thing done in one line. */    /* we can use place if both justify and align are same. */
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+/* More on units in CSS. */
+
+
+h1{
+    border: 2px solid black;
+
+    width: 30%;                     /* Here, length unit is used in '%' which sets the length relative to the element's parent's length. */
+}
+
+#outer {
+    height: 400px;
+    width: 400px;
+
+    background-color: pink;
+    margin: 50px;
+
+    font-size: 30px;
+}
+
+#inner {
+    height: 100px;
+    width: 100px;
+
+    background-color: cornflowerblue;
+    margin: 10%;                            /* Here, margin is set relative to the outer div's width */
+
+    font-size: 0.5em;                       /* 'em' length unit is used to set the size relative to font size of the parent, in case of typographical properties such as 'font size'. And relative to font size of the element itself, in case of other properties like 'width'. */
+                                            /* Here, the font size of inner text is set to '0.5' times the font size of the outer text. */
+    
+    padding: 3em;                       /* Here, the padding of inner text is set to '3' times the font size of the text. i.e equivalent to (30 * 0.5 * 3)px. */
+}
+
+
+div{
+    font-size: 2em;                 /* This is the problem with using 'em' as a length unit. It causes a snowball effect in nested cases. */
+}
+
+
+.rem{
+    font-size: 2rem;                /* 'rem' unit fixes the problem we had using the 'em' unit. */
+                                    /* 'rem' sets the length relative to the font size of the root element. */
+}
+
+
+
+/* 'vh'(viewport height) and 'vw'(viewport width) are also units in css which work similar to '%' but for only height and width respectively. */
+
+
+
+
+
+

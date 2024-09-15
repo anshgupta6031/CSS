@@ -1,0 +1,27 @@
+/* Some extra usefull properties. */
+
+
+
+div{
+    height: 100px;
+    width: 100px;
+
+    background-color: rgba(255, 0, 0, 0.303);       /* In 'rgba' color system 'a' stands for alpha channel which ranges from 0 to 1 and sets the opacity of the color. */
+}
+
+h1{
+    color: #8b008b3f;       /* In hexadecimal form the last 2 bits represent the alpha channel. Which ranges from '00' to 'ff'. */
+}
+
+p{
+    opacity: 0.476;             /* Opacity also ranges from 0 to 1. It sets the opacity of the whole element, whereas the alpha channel sets the opacity of the color. */
+}
+
+
+
+
+
+
+
+
+

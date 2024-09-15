@@ -1,0 +1,327 @@
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+
+body::before{                       
+    content: "";
+    position: absolute;
+
+    background-image: url('img.jpg');
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    top: 0;
+    left: 0;
+
+    opacity: 0.97;
+
+}                                   /* This is how we can set a proper backgroung image... */
+
+
+.left{
+    border: 1px solid rgb(63, 62, 62);
+    display: inline-block;
+
+    position: absolute;
+    left: 34px;
+    top: 29px;
+
+    background-color: rgba(63, 61, 61, 0.562);
+}
+
+
+.mid{
+    border: 1px solid rgb(255, 255, 255);
+
+    width: 50%;
+    margin: 29px auto;
+}
+
+
+.right{
+    /* border: 1px solid grey; */
+
+    display: inline-block;
+
+    position: absolute;
+    left: 185px;
+    top: 600px;
+
+}
+
+
+.navbar li{
+    display: inline-block;
+
+    font-size: 25px;
+
+    
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 29px;
+    
+    padding: 0px 25px;
+}
+
+
+a:hover{
+    text-decoration: underline;
+    color: gray;
+}
+
+
+.left img{
+    height: 72px;
+    width: 74px;
+}
+
+
+.left div{
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+
+.btn{
+    margin: 0px 51px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.btn:hover{
+    background-color: rgb(63, 61, 61);
+}
+
+
+.container{
+    border: 2px solid white;
+    margin: 59px 98px;
+    padding: 31px 32px;
+    width: 36%;
+    border-radius: 16px;
+}
+
+
+
+.group input{
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    width: 288px;
+    margin: 10px auto;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container button{
+    display: block;
+    width: 19%;
+    height: 36px;
+    font-size: 20px;
+    margin: 25px auto 0px;
+    padding: 0px;
+}
+
+
+
+
+/* ***************************************************************************************************************************************************** */
+
+
+
+
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+
+    position: absolute;
+    right: 30px;
+    top: 23px;
+    cursor: pointer;
+
+    transition: all 0.1s ease-in-out 0s;
+}
+
+
+.sidebar_menu{
+    position: absolute;
+    right: -360px;
+    top: 0px;
+
+    height: 100%;
+    width: 350px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    height: 75px;
+
+    line-height: 60px;
+
+    box-shadow: 0px 1px 4px rgba(255, 255, 255, 0.5);
+}
+
+
+.sidebar_menu .logo a{
+    position: absolute;
+    right: 68px;
+    padding-top: 4px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+
+
+.sidebar_menu .btn_two i{
+    color: grey;
+    font-size: 26px;
+    position: absolute;
+    right: 322px;
+    top: 28px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+.sidebar_menu .menu{
+    color: white;
+    position: absolute;
+
+    width: 100%;
+    top: 80px;
+    font-size: 19px;
+
+}
+
+
+ul{
+    padding-left: 8px;
+}
+
+.sidebar_menu .menu li,a{
+    margin-top: 6px;
+    padding: 14px 0px;
+
+    list-style: none;
+}
+
+
+.sidebar_menu .menu i{
+    padding-right: 10px;
+}
+
+
+.social_media{
+    position: absolute;
+    right: 42px;
+    bottom: 48px;
+}
+
+
+.social_media i{
+    opacity: 1;
+
+    padding: 0px;
+    margin: -10px;
+    font-size: 26px;
+
+
+}
+
+
+#check{
+    display: none;
+}
+
+
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.5);
+}
+
+
+
+.btn_one:hover{
+    font-size: 32px;
+}
+
+
+
+.sidebar_menu .btn_two i:hover{
+    font-size: 30px;
+}
+
+
+
+.social_media i:hover{
+    opacity: 1.5;
+    transform: scale(1.1);
+}
+
+
+
+#check:checked ~ .sidebar_menu{
+    right: 0px;
+}
+
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+
+
+#check:checked ~ .sidebar_menu .btn_two i{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+

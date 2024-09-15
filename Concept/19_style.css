@@ -1,0 +1,80 @@
+/* z-index in css......... */
+
+
+
+*{
+    font-family: "Rubik Beastly", system-ui;        /* used the font imported from google fonts.... */
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+
+
+}
+
+
+#box1{
+    background-color: aqua;
+
+    position: relative;
+
+    z-index: 3;                     /* overlapping elements with larger z-index cover those with a smaller one. */
+                                    /* z-index of any element is '0' by default. */
+                                    /* NOTE :- z-index property can not be applied on the default/static positions. */
+}
+
+
+#box2{
+    background-color: yellowgreen;
+
+    position: relative;
+    bottom: 75px;
+
+    z-index: 2;
+}
+
+
+#box3{
+    background-color: bisque;
+
+    position: relative;
+    bottom: 150px;
+
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

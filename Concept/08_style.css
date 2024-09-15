@@ -1,0 +1,72 @@
+
+
+
+
+:root{                                  /* whatever variables are declared in the root are globally accessable. */
+    --col: black;                                   /* declared a variable which stores the color black. */
+}
+
+div{
+    height: 300px;
+    width: 500px;
+
+    background-image: url("https://images.unsplash.com/photo-1708265801382-c04100747bce?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+                                        /* There are three options to give the size of the background image.
+    /* background-size: contain;            1)  contain :- it does not crop or scale the image but repeats it to fill the element. */
+    /* background-size: auto;               2)  auto :- it streaches the image to fill the element.*/
+    background-size: cover;              /* 3)  cover :- it crops the image (without scaling) according to the size of the element. */
+
+    background-repeat: no-repeat;       /* by 'no-repeat' the background image does not repeat. */    /* 'repeat-x' and 'repeat-y' will make it repeat on x and y axis respectivelly. */
+
+ /*   background-attachment: fixed;       /* by this, the background does not move when we scroll in the web page..... */
+                                          /* It is also used to create parallex effect in the web pages.... */
+    
+    margin: auto;           /* To center the div. */
+    margin-top: 60px;
+
+    box-shadow: 15px 15px 15px 3px black, inset 3px 5px rgb(236, 185, 123);                 /* used to give shadow to an element. */
+                                                                                                /* The syntax is -> box-shadow: x_offset, y_offset, blur_radius, spread_radius, color_of_the_shadow; */
+                                                                                                /* 'inset' sets a shadow inside the container div. */
+                                                                                                /* 2 comma separated shadows are made on the same div box. */
+
+}
+
+
+div p{
+    font-size: 30px;
+
+    color: var(--col);
+
+    text-shadow: 2px 2px 3px var(--col);                             /* used to give shadow to text. */
+                                                                    /* used the pre declared variable to set the color black. */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

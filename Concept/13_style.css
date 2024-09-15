@@ -1,0 +1,105 @@
+/* More on flexbox...... */
+
+
+
+#container{
+    height: 300px;
+    width: 80%;
+
+    background-color: white;
+
+    margin: 10px auto;
+    border: 2px solid black;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+
+    align-content: flex-start;
+
+}     
+
+
+#violet{
+    flex-basis: 50px;                      /* It sets the initial main size of the flex element. */
+                                        /* The length is applied to the main axis's length. i.e in this case width as the main axis is from left to right. */
+}
+
+#green{
+    flex-grow: 1;
+}
+
+
+#blue{
+    flex-grow: 2;                   /* This grows twice as green. */        /* Works only when there is space to grow. */
+/*    max-width: 200px;               /* Sets the maximum witdth an element can take even when it grows. */       /* This limits the growth of the element. */
+}
+
+
+#orange{
+    flex-shrink: 2;                         /* This shrinks twice as red. */       /* Works only when there is overflow of element. */
+/*    min-width: 80px;                /* Sets the minimum witdth an element can take even when it shrinks. */
+}
+
+
+#red{
+    flex-shrink: 1;
+}
+
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+#container div{
+    height: 100px;
+    width: 100px;                       /* set width: 100px to see grow effects. And width: 400px to see shrink effects. */
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

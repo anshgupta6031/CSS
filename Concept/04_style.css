@@ -1,0 +1,90 @@
+/* Box model in CSS. */
+
+
+div{
+    height: 200px;                      /* sets the 'height' of the 'content' area of the 'div' tag. */
+    width: 500px;                       /* sets the 'width' of the 'content' area of the 'div' tag. */
+
+    background-color: bisque;
+
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: aquamarine; */
+    border: 5px solid aquamarine;       /* same commented thing done in one line...... */
+
+    /* border-left-width: 2px;
+    border-left-color: red;
+    border-left-style: dashed; */
+    border-left: 3px dashed red;       /* same commented thing done in one line...... */
+
+    border-radius: 25px;                 /* gives a round edge to the content area box. */
+    border-top-right-radius: 0px;
+
+    /* padding-top: 18px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 20px; */
+    padding: 18px 15px 10px 20px;       /* same commented thing done in one line. In clockwise, starting from top. */
+                                        /* If we write (padding: 18px;) then '18px' is the padding set from all the directions. */
+
+    /* margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+    margin-left: 15px; */
+    margin: 20px 30px 25px 15px;       /* same commented thing done in one line. In clockwise, starting from top. */
+                                       /* If we write (margin: 18px;) then '18px' is the margin set from all the directions. */
+
+    display: inline-block;
+    box-sizing: border-box;             /* this makes the padding and margin include in the total width/height. */
+}
+
+
+button{
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;                 /* (border-radius: 50%) with same height and width creates a circle as the content space. */
+
+    padding: 5px;
+
+    margin: 20px;               /* NOTE : The heading elements are given some margin by default. which can obviously be changed. */
+
+    cursor: pointer;            /* sets the cursor type when we hover on the button. */
+}
+
+
+h2{
+    display: inline;            /* Now, h2 will behave as an inline element. */
+
+    background-color: coral;
+}
+
+
+span{
+    display: block;             /* Now, span will behave as a block element. */
+    background-color: coral;
+}
+
+
+.abc{
+    height: 100px;
+    width: 100px;
+
+    border: 3px solid black;
+    background-color: rgb(141, 219, 123);
+
+    border-radius: 0px;
+
+    margin: 5px;
+
+    display: inline-block;             /* Here, 'display: inline' won't work as if the div is made inline then some 'margin' , 'height' and 'width' propertiws won't be applied. */
+                                        /* Therefore it is made 'inline-block'. So now it will work as an inline element but will show its properties according to block element. */
+                                        /* (Display: none) is another display property used to disappear any element. The element's position is not reserved when this property is applied. */
+                                        /* (Visibility: none) is a property which is also used to disappear any element. But the element's position is reserved when this property is applied. */
+}
+
+
+
+
+
+

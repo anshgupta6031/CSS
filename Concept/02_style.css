@@ -1,0 +1,93 @@
+/* Properties in CSS. */
+
+
+
+h1{                             /* This is a selector for h1 tag in html. */    /* All the properties specified in a selector is applied to every tag of that selector's type. */
+    color: blue;               /* color property changes the foreground color of the element. */    /* here, named color system is used to write the color. */
+    background-color: gray;   /* background color property changes the background color of the element. */
+    
+    text-align: center;
+    font-weight: normal;            /* font weight tells how bold you want the text to be. It is set in the range 100-900 with step of 100. */       /* normal is equivalent to 400. */
+    text-decoration: underline;     /* we use text decoration to decorate(underline, overline, cut, etc.) the text.. */
+
+    text-transform: uppercase;      /* Makes all the letters uppercase. */
+}
+
+p {                             /* This is a selector for p tag in html. */
+    color: #ff0000;             /* here, hexadecimal color system is used to write the color. Where, first 2 after # stand for red, next 2 for green and last 2 hexadecimal part for blue (RGB) color. */    
+    background-color: cornsilk;
+
+    text-align: left;           /* "text-align: start" also do the same thing. */
+    font-weight: 600;           /* multiple of 100 in range 100-900 can be used to specify the amount of boldness. */
+
+    line-height: 2.5;           /* Line height is the gap between the lines. '2.5' means 2.5 times the normal height. */
+                                /* 'line-height: normal' is used for normal height. */
+    letter-spacing: 3px;       /* Letter space is the gap between the letters. 'px' means pixels. */
+                                /* 'letter-spacing: normal' is used for normal spacing. */
+    word-spacing: 10px;
+
+    font-family: papyrus;
+}
+
+h2{
+    text-align: right;          /* "text-align: end" also does the same thing. */
+                                /* "text-align: justify" adds up extra spaces between the words so that the text gets justified. */
+    text-decoration: line-through red wavy;      /* Color of the decoration type can also be specified. Baad me likho red ya pehle(line-through ke), sab sahi h. */
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;       /* used to set font style. */     /* we can give multiple styles in decreasing priority so that if any style is not available on any browser it can show other style options. */
+    font-weight: 100;
+}
+
+button {                             /* This is a selector for button tag in html. */
+    color: rgb(89, 232, 89);        /* here, RGB color system is used to write the color. */    /* range of R,G and B is 0-255. which is in hexadecimal 00-ff. */
+    background: black;          /* only background also works but in most of the cases we won't be using that. */
+
+    text-decoration: underline wavy;              /* The underline type can also be modified accordingly. */
+    text-decoration-color: rgb(255, 201, 101);      /* This property can also be used to specify the color. */
+}
+
+h3{
+    color: teal;
+    background-color: bisque;
+
+    /* width: fit-content; */
+
+    text-align: start;
+    font-weight: bold;              /* bold is equivalent to 700. */
+    font-style: italic;
+    text-decoration: overline purple;
+    text-decoration-style: double;              /* This property can also be used to specify the style. */                                   
+}
+
+a{
+    text-decoration: none;                      /* It removes the underline of the link. */
+
+    font-size: 50px;
+}
+
+body{                                      /* properties of the page can be written in a body selector. */
+    background-color: aquamarine;       /* This is how we can set the page background color. */
+}
+
+/* Text decoration is mostly used to :-
+
+    1) underline.
+    2) cut.
+    3) remove the underline of anchor tag.         //  Most important. 
+*/
+
+/* 
+There are 2 types of length units :-
+1)  Absolute units: these are fixed units.
+    Ex: px (pixels), pt, pc, cm, mm, in(inch), etc.
+
+    1 in = 96 px.
+    1 in = 72 pt.
+    1 pc = 12 pt.
+
+2)  Relative units: these are relativelly defined units.
+    Ex: % (percent), em, rem, ch, vh, etc.
+
+NOTE :- Only relative units are used in responsive websites.
+
+*/

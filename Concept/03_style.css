@@ -1,0 +1,123 @@
+/* Selectors in CSS. */
+
+
+* {                      /* This is a universal selector tag. The properties in this selector are applied to the whole page at once. */
+    font-family: 'Courier New' !important;          /* !important makes the property undistructable. i.e. it is the most important property in the document and can nohow be changed. */
+}
+
+h1, h3{                     /* This is a element selector tag. Selects all the elements of same type. */        /* multiple elements can be selected at once by just adding the tag after a comma. */
+    color: #b92b27;
+}
+
+#jee {                           /* This is a ID selector tag. */     /* Selects an element based on the value of their element's id attribute, which is unique for each element. */
+    color: rgb(13, 255, 0);
+}
+
+#login, #ans1{                       /* multiple id's can also be selected. */
+    background-color: bisque;
+}
+
+#signup{
+    background-color: gold;
+}
+
+.upvote {                           /* This is a class selector tag. */     /* Selects elements based on the value of their element's class attribute, which is unique for a group of different element. */
+    background-color: aquamarine;
+}
+
+.post a {                           /* This is a descendant selector tag. */     /* Selects all the second type of elements which are descendants(are made under) of the first type. */
+    color: rgb(255, 101, 229);
+}                                   /* here all 'a' tags under '.post' class are selected. */
+
+nav ul li{
+    color: chartreuse;
+    /* list-style: none; */         /* used to remove the bullet points. */
+}                                   /* Note :- there is no comma between 'nav', 'ul' and 'li'. If we give a comma it will work as a element selector tag. */
+
+p + h3 {                            /* This is a sibling combinator tag. */     /* It selects one tag of 'h3' where 'h3' is immediately after 'p' tag. */
+    text-decoration: underline wavy rgb(255, 204, 0);
+}                                   /* only 'h3' is selected not the 'p' tag */
+
+div > input {                       /* This is a child combinator tag. */       /* It selects all 'input' which are direct children of 'div'. */
+    background-color: rgb(225, 223, 228);
+}                                   /* Note :- It only selects the direct child of div tag and that though when it is an input tag. */
+
+input[type="text"] {                /* This is a attribute selector tag. */     /* It selects all the 'input' tags which are of 'type'(attribute) 'text'. */
+    color: rgb(201, 29, 29);
+    cursor: crosshair;
+}
+
+input[type="password"] {
+    color: rgb(48, 132, 36);
+    cursor: pointer;
+}
+
+
+/********************************************************************************************************************************************************************** */
+
+/* Psudo classes...... */
+/* A psudo class is a keyword added to the selector that specifies a special state of the selected element. */ 
+
+
+button:hover {                        /* This is a button selector tag followed by a psudo class. */
+    background-color: black;
+    color: white;
+}                                       /* So, now when we hover the cursor on the buttons these properties are automatically applied on them. */ 
+
+h3:hover{
+    text-decoration: none;              /* To remove the underline when we hover on h3. */
+}
+
+button:active{                          /* 'active' is another psudo class which gets triggered when we click on the element. */
+    background-color: pink;
+    color: black;
+}
+
+input[type="radio"]:checked + label {       /* whenever the 'input' tag whose type is 'radio' gets 'checked', then the 'label' tag which is the sibling of the 'input' tag gets selected. */
+    color: red;
+    font-weight: 600;
+}
+
+p:nth-of-type(2n-1){                          /* 'nth-of-type()' is another psudo class which selects the nth element of given type. */
+    color: rgb(255, 0, 0);
+}                                              /* here, all the odd paragraphs are selected. */
+
+nav ul :nth-child(3){                         /* 'nth-child()' is a psudo class which selects the nth 'child' of given type of element. */
+    background-color: rgb(153, 153, 212);
+}
+
+
+/********************************************************************************************************************************************************************** */
+
+/* Psudo elements....... */
+/* A psudo element is a keyword added to the selector that lets you style a specific part of the selected element. */
+
+
+h1::first-letter{                           /* here, 'first-letter' is a psudo element. '::' is written to implement a psudo element. */
+    color: green;
+}
+
+#last::first-line{                      /* here, 'first-line' is a psudo element. The properties are applied on the first line of the paragraph of id 'last'. */
+    color: red;
+    font-weight: 500;
+}
+
+p::selection{                           /* here, 'selection' is a psudo element. The properties are applied on the selected part of any 'paragraph' tag. */
+    background-color: yellow;
+}                                     /* press (ctrl + a) to see the effect on the web page. */
+
+#last::before{                          /* Applys css just before the given type of element. */
+    content: "This is 'before' psudo element.";         /* The test is written before the '#last' element. */
+}
+
+#last::after{                          /* Applys css just after the given type of element. */
+    content: "This is 'after' psudo element.";         /* The test is written after the '#last' element. */
+}
+
+
+li::marker{
+    content: "♥ ";                   /* we can change the bullets of the list with any symbol like this.... */
+}
+
+
+

@@ -1,0 +1,101 @@
+/* Animations in CSS. */
+
+
+
+#first{
+    height: 100px;
+    width: 300px;
+    background-color: rgb(244, 89, 115);
+
+/* Implementing animation on this element......... */
+    animation-name: font_animaiton;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 3;                     /* It is the no. of times the animation will occur. */  
+    animation-direction: alternate;
+}
+
+
+#second{
+    height: 100px;
+    width: 300px;
+    background-color: green;
+
+    animation: color_animaiton 2s ease-in 0s infinite normal;      /* Shorthand for animation is used here. */
+}
+
+
+#third{
+    height: 100px;
+
+    animation: width_animaiton 1s ease-in-out 0s infinite alternate;      /* Shorthand for animation is used here. */
+}
+
+
+#fourth{
+    height: 100px;
+    width: 300px;
+    background-color: green;
+
+    animation: last_animaiton 2s ease-in-out 0s infinite normal;      /* Shorthand for animation is used here. */
+}
+
+
+/*****************************************************************************************************************************************************************/
+
+
+@keyframes font_animaiton{                   /* This is how we design any animation in CSS. */      /* Instead of 'font_animaiton' anything can be written. */
+    from{
+        font-size: 20px;                     /* Properties on which we want the transition to be applied. */
+    }
+
+    to{
+        font-size: 40px;
+    }
+}                                       /* This is just a blueprint/templeet of the animation. */
+
+
+@keyframes color_animaiton{                   /* Another animation blueprint. */
+    from{
+        background-color: green;
+    }
+
+    to{
+        background-color: blue;
+    }
+}
+
+
+@keyframes width_animaiton{                   /* Another animation blueprint. */
+    from{
+        width: 0px;
+        background-color: green;
+    }
+
+    to{
+        width: 800px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 0px 500px 500px 0px;
+    }
+}
+
+
+@keyframes last_animaiton{                   /* Another animation blueprint. */
+    10%{                                     /* when 10% of animation is complete, the following properties will be applied. */
+        background-color: green;
+    }
+
+    50%{                                     /* when 50% of animation is complete, the following properties will be applied. */
+        background-color: yellow;
+    }
+
+    90%{                                     /* when 90% of animation is complete, the following properties will be applied. */
+        background-color: blue;
+    }
+}
+
+
+
+
+

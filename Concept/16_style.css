@@ -1,0 +1,71 @@
+/* Grid area property of grid in CSS. */
+
+
+
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:                            /* The area is defined in the form of a 2D matrix.... */
+    "navbar navbar navbar navbar"
+    "section section section aside"
+    "footer footer footer footer";
+}
+
+
+
+.item{
+    background-color: rgb(251, 212, 218);
+    border: 2px solid black;
+}
+
+
+#navbar{
+    grid-area: navbar;                          /* name of the area of this item's cell is set as navbar */
+}
+
+#section{
+    grid-area: section;                          /* name of the area of this item's cell is set as section */
+    height: 500px;
+    width: 1050px;
+}
+
+#aside{
+    grid-area: aside;                          /* name of the area of this item's cell is set as aside */
+    height: 500px;
+
+    overflow-y: scroll;                         /* avoids the overflow of text in a container. */
+}
+
+#footer{
+    grid-area: footer;                          /* name of the area of this item's cell is set as footer */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
